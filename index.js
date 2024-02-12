@@ -27,10 +27,10 @@ fs.readdirSync("./plugins").forEach((plugin) => {
 						}
 			}
 });
-  const {
+  /*const {
     data
   } = await axios(`https://pastebin.com/raw/${config.SESSION_ID}`);
-  await fs.writeFileSync("./lib/session/creds.json", JSON.stringify(data));
+  await fs.writeFileSync("./lib/session/creds.json", JSON.stringify(data)); */
 
   const {
     state,
@@ -79,18 +79,18 @@ fs.readdirSync("./plugins").forEach((plugin) => {
         client.end(`Unknown DisconnectReason: ${reason}|${lastDisconnect.error}`);
       }
     } else if (connection === 'open') {
-   console.log("Phoenix-MD By Abhishek Suresh🍀");
+   console.log("Udavin Wijesundara Support Bot");
 
     client.sendMessage(client.user.id, { 
-        text: `𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳 𝚂𝚝𝚊𝚛𝚝𝚎𝚍\n\n𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${version}\n𝙿𝚕𝚞𝚐𝚒𝚗𝚜 : not found\n𝙼𝚘𝚍𝚎 : not found\n𝙿𝚛𝚎𝚏𝚒𝚡 : ${config.HANDLERS}\n𝚂𝚞𝚍𝚘 : ${config.SUDO}`, 
+        text: `Support 𝚂𝚝𝚊𝚛𝚝𝚎𝚍\n\n𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${version}\n𝙿𝚕𝚞𝚐𝚒𝚗𝚜 : not found\n𝙼𝚘𝚍𝚎 : not found\n𝙿𝚛𝚎𝚏𝚒𝚡 : ${config.HANDLERS}\n𝚂𝚞𝚍𝚘 : ${config.SUDO}`, 
         contextInfo: { 
             externalAdReply: {
-                title: "𝙿𝚑𝚘𝚎𝚗𝚒𝚡-𝙼𝙳",
+                title: "Udavin Wijesundara Photography",
                 body: "𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝙱𝚘𝚝",
-                thumbnailUrl: "https://i.ibb.co/tHWJrz3/IMG-20231128-WA0005.jpg",
+                thumbnailUrl: "https://i.ibb.co/8rvPrNK/low.jpg",
                 mediaType: 1,
-                mediaUrl: "https://github.com/AbhishekSuresh2/Phoenix-MD",
-                sourceUrl: "https://github.com/AbhishekSuresh2/Phoenix-MD",
+                mediaUrl: "https://udavinwijesundara.free.nf/",
+                sourceUrl: "https://udavinwijesundara.free.nf/",
             } 
         } 
     });
@@ -103,7 +103,7 @@ fs.readdirSync("./plugins").forEach((plugin) => {
   });
 }
 app.get("/", (req, res) => {
-	res.send("Hello Phoenix-MD Started");
+	res.send("Hello Bot Had Started");
 });
-app.listen(port, () => console.log(`Phoenix-MD Server Listening On Port http://localhost:${port}`));
+app.listen(port, () => console.log(`Listening On Port http://localhost:${port}`));
 start();
