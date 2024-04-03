@@ -3,7 +3,7 @@
 const toBool = (x) => x === 'true';
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || 'inrl~fe38fkim83e52f69c2af2dbc9595db837318',
+    SESSION_ID: process.env.SESSION_ID || 'inrl~66403VzFqfa476a6bc80217515d14273435e',
     HANDLERS: process.env.HANDLERS || '.',
     BOT_NAME: process.env.BOT_NAME || 'udavin-wijesundara-photography-support-bot',
     OWNER_NAME: process.env.OWNER_NAME || 'Udavin Wijesundara',
